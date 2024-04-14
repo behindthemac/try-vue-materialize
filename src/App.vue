@@ -30,7 +30,7 @@ export default {
   <div class="container">
     <div class="row">
       <div class="col s6">
-        <div id="programming-languages" class="chips input-field">
+        <div class="chips input-field" id="programming-languages">
           <input class="input">
         </div>
       </div>
