@@ -27,7 +27,7 @@ export default {
 </script>
 
 <template>
-  <div id="container">
+  <div class="container">
     <div class="row">
       <div class="col s6">
         <div id="programming-languages" class="chips input-field">
