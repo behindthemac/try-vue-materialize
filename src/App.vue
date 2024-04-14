@@ -1,8 +1,8 @@
 <script>
 export default {
   mounted() {
-    const elems = document.getElementById('programming-languages');
-    const instances = M.Chips.init(elems, {
+    const el = document.getElementById('programming-languages');
+    const instances = M.Chips.init(el, {
       placeholder: 'Enter a tag',
       secondaryPlaceholder: 'Add a Tag',
       data: [
