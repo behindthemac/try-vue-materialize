@@ -31,7 +31,7 @@ export default {
     <div class="row">
       <div class="col s6">
         <div id="programming-languages" class="chips input-field">
-          <input id="companies" class="input">
+          <input class="input">
         </div>
       </div>
     </div>
