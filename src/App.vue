@@ -1,8 +1,41 @@
-<script setup>
+<script>
+export default {
+  mounted() {
+    const elems = document.getElementById('programming-languages');
+    const instances = M.Chips.init(elems, {
+      placeholder: 'Enter a tag',
+      secondaryPlaceholder: 'Add a Tag',
+      data: [
+        { tag: 'HTML' },
+        { tag: 'CSS' },
+        { tag: 'JavaScript' },
+      ],
+      autocompleteOptions: {
+        data: {
+          'HTML': null,
+          'CSS': null,
+          'JavaScript': null,
+          'Python': null,
+          'SQL': null,
+        },
+        limit: Infinity,
+        minLength: 1,
+      }
+    });
+  }
+}
 </script>
 
 <template>
-  Hello World
+  <div id="container">
+    <div class="row">
+      <div class="col s6">
+        <div id="programming-languages" class="chips input-field">
+          <input id="companies" class="input">
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style scoped>
